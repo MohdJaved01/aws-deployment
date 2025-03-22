@@ -13,7 +13,7 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
-
+// Add authorisation
 app.UseAuthorization();
 
 app.MapControllerRoute(
