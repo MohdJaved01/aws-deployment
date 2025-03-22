@@ -1,21 +1,20 @@
-﻿version: 0.2
+version: 0.2
 
 phases:
   install:
     commands:
-      - echo "Installing .NET 8 SDK"
-      - yum install -y dotnet-sdk-8.0
+      - echo "Installing .NET SDK 8.0 on Amazon Linux 2023..."
+      - sudo dnf install -y dotnet-sdk-8.0
 
   build:
     commands:
-      - echo "Building the .NET 8 project"
-      - dotnet publish -c Release -o ./build_output
+      - echo "Building the application..."
+      - dotnet build -c Release
 
   post_build:
     commands:
-      - echo "Build completed on $(date)"
+      - echo "Build completed successfully."
 artifacts:
   files:
     - '**/*'
   discard-paths: no
-  base-directory: ./build_output
