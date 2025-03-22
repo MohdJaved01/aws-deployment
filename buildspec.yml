@@ -1,0 +1,21 @@
+﻿version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing .NET 8 SDK"
+      - yum install -y dotnet-sdk-8.0
+
+  build:
+    commands:
+      - echo "Building the .NET 8 project"
+      - dotnet publish -c Release -o ./build_output
+
+  post_build:
+    commands:
+      - echo "Build completed on $(date)"
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  base-directory: ./build_output

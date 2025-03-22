@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsDeploymentDemo", "AwsDeploymentDemo.csproj", "{1E648352-F90E-4473-9CA4-472B55769802}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B7E6FB4-838F-4286-B87F-EE658B833867}"
+	ProjectSection(SolutionItems) = preProject
+		appspec.yml = appspec.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{2AB5E641-BF42-4161-9DFE-CAB71F1CB885}"
+	ProjectSection(SolutionItems) = preProject
+		start.sh = start.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E648352-F90E-4473-9CA4-472B55769802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E648352-F90E-4473-9CA4-472B55769802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E648352-F90E-4473-9CA4-472B55769802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E648352-F90E-4473-9CA4-472B55769802}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD5B686D-382C-4B0A-B12B-F2A9A9FF0969}
+	EndGlobalSection
+EndGlobal
