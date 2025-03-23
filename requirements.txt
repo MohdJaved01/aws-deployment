@@ -1,0 +1,5 @@
+# Example requirements.txt
+boto3
+pandas
+numpy
+requests
