@@ -3,17 +3,17 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing .NET SDK 8.0 on Amazon Linux 2023..."
-      - sudo dnf install -y dotnet-sdk-8.0
+      - echo Installing dependencies...
+      - pip3 install -r requirements.txt -t ./package
 
   build:
     commands:
-      - echo "Building the application..."
-      - dotnet build -c Release
+      - echo Build started on `date`
+      - python3 -m compileall .
 
   post_build:
     commands:
-      - echo "Build completed successfully."
+      - echo Build completed on `date`
 artifacts:
   files:
     - '**/*'
